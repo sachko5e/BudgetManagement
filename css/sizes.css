@@ -1,0 +1,117 @@
+/* Sizes and positions:
+ *
+ * border-width
+ * bottom
+ * clear
+ * display
+ * float
+ * height
+ * left
+ * margin
+ * outline-width
+ * padding
+ * position
+ * right
+ * text-align
+ * top
+ * TODO: white-space???
+ * width
+ */
+
+body {
+    margin: 0 auto;
+    max-width: 942px;
+    min-width: 782px;
+    padding: 0 20px 20px;
+}
+
+#top {
+    height: 60px;
+
+    /* This is a hack so that the flap containing the Avatar doesn't cause a double box-border */
+    padding: 0 0 0 10px;
+}
+
+#foot {
+    border-width: 1px;
+    padding: 13px;
+}
+
+#top-cosmetic {
+    border-width: 0 1px 1px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+#main {
+    padding: 20px 0;
+}
+
+#main-content {
+    border-width: 1px;
+    margin: 0 auto;
+    min-height: 200px;
+    padding: 20px;
+}
+
+#foot-content {
+    text-align: center;
+}
+
+#top-content, #foot-content {
+    max-width: 942px;
+    min-width: 782px;
+    position: relative;
+}
+
+#top-nav {
+    border-width: 1px;
+    height: 33px;
+    position: absolute;
+    right: 10px;
+    margin-top: 16px;
+}
+
+#top-nav a {
+    padding: 5px 12px;
+}
+
+#top-nav li {
+    display: inline;
+}
+
+#top-avatar-flap {
+    border-width: 0 1px 1px;
+    height: 60px;
+    left: -10px;
+    position: absolute;
+    width: 60px;
+}
+
+#top-avatar-flap-join {
+    height: 33px;
+    left: 50px;
+    position: absolute;
+    width: 10px;
+}
+
+#top-avatar {
+    border-width: 1px;
+    height: 40px;
+    left: 9px;
+    position: absolute;
+    top: 9px;
+}
+
+#top-title {
+    left: 62px;
+    position: absolute;
+    top: 10px;
+}
+
+/* TODO: focus on other elements */
+a:focus {
+    outline-width: 0.2em;
+}

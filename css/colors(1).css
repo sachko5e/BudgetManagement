@@ -1,0 +1,91 @@
+/* Colors:
+ *
+ * background-color
+ * border-color
+ * color
+ * outline-color
+ */
+
+.inset {
+    background-color: #eee;
+    border-color: #777;
+}
+
+h1 {
+    color: #900;
+}
+
+h2 {
+    color: #009;
+}
+
+.code, .pre, .demo {
+    background: #eee;
+    border-color: #777;
+}
+
+p .code, li .code {
+    border-color: #ddd;
+}
+
+.method, .property, .config, .var, .event {
+    color: #000;
+}
+
+.article-meta, .article-tag {
+    background-color: #eee;
+    border-color: #777;
+}
+
+.article-meta, h2:after, h2:before {
+    color: #090;
+}
+
+.article-tag {
+    color: #909;
+}
+
+#main-content .demo a:visited {
+    color: #555;
+}
+
+#main-content .demo a:hover:visited {
+    color: #555;
+}
+
+.separator {
+    border-top-color: #333;
+    color: transparent;
+}
+
+.article-footer {
+    background-color: #eee;
+    border-color: #777;
+}
+
+.article-footer-heading {
+    color: #070;
+}
+
+/* TODO: These should live elsewhere */
+table.download {
+    border-color: #333;
+}
+
+table.download thead {
+    background-color: #ddd;
+    color: #111;
+}
+
+/* Not all browsers support borders on thead or col */
+table.download th, table.download td {
+    border-color: #333;
+}
+
+table.download tbody {
+    background-color: #eee;
+}
+
+.license {
+    background-color: #eee;
+}

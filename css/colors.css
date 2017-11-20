@@ -1,0 +1,78 @@
+/* Colors:
+ *
+ * background-color
+ * border-color
+ * color
+ * outline-color
+ */
+
+body {
+    background-color: #eee;
+    color: #333;
+}
+
+#foot {
+    background-color: #fff;
+    border-color: #000;
+}
+
+#main-content {
+    background-color: #f9f9f9;
+    border-color: #000;
+}
+
+.main-content a {
+    color: blue;
+}
+
+/* The extra * selectors in the next few rules are necessary because inherit isn't working in Chrome */
+.main-content a:visited,
+.main-content a:visited * {
+    color: #555;
+}
+
+.main-content a:hover, .main-content a:focus,
+.main-content a:hover *, .main-content a:focus * {
+    color: #009;
+}
+
+.main-content a:hover:visited, .main-content a:focus:visited,
+.main-content a:hover:visited *, .main-content a:focus:visited * {
+    color: #555;
+}
+
+#top-cosmetic {
+    background-color: #fff;
+    border-color: #000;
+}
+
+#top-nav {
+    background-color: #999;
+    border-color: #000;
+}
+
+#top-nav a {
+    color: #fff;
+}
+
+#top-nav a:hover, #top-nav a:focus {
+    color: #009;
+}
+
+#top-avatar-flap {
+    background-color: #fff;
+    border-color: #000;
+}
+
+#top-avatar-flap-join {
+    background-color: #fff;
+}
+
+#top-avatar {
+    border-color: #000;
+}
+
+/* TODO: focus on other elements */
+a:focus {
+    outline-color: #555;
+}

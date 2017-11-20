@@ -1,0 +1,113 @@
+/* Fonts:
+ *
+ * font-family
+ * font-size
+ * font-style
+ * font-weight
+ * letter-spacing
+ * line-height
+ */
+
+.inset p, .inset ul {
+    font-size: 1.1em;
+}
+
+.inset .caption {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.6em;
+    font-weight: bold;
+    letter-spacing: 0.0769em; /* 2px */
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: 0.0909em; /* 2px */
+}
+
+.p, .bullet-list {
+    font-size: 1.2em;
+    line-height: 22px; /* TODO: lineheights */
+}
+
+/* Can't use #main-content > p:first-of-type in IE */
+p.first {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.code, .pre, .license {
+    font-family: monospace, monospace; /* Hack to fix font-size */
+    font-size: 1.2em;
+}
+
+p .code, li .code, .license p {
+    font-size: 1em;
+}
+
+.demo {
+    font-size: 1.2em;
+}
+
+.demo b {
+    font-weight: bold;
+}
+
+.demo i {
+    font-style: italic;
+}
+
+.article-meta, .article-tag {
+    font-family: monospace, monospace;  /* Hack to fix font-size */
+    font-size: 1.2em;
+    line-height: 14px; /* Make Safari 3 & 4 play nice until we can fix the monospace sizing properly */
+}
+
+.article-tag {
+    font-weight: bold;
+}
+
+.article-meta .field {
+    font-weight: bold;
+}
+
+.emphasis {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.term, .type, .lang, .name {
+    font-style: oblique;
+}
+
+.class, .method, .property, .config, .var, .event, .email-address {
+    font-family: monospace, monospace;  /* Hack to fix font-size */
+}
+
+.keyword {
+    font-family: monospace, monospace;  /* Hack to fix font-size */
+    font-weight: bold;
+}
+
+.article-footer-heading {
+    font-size: 1.6em;
+}
+
+/* TODO: These should live elsewhere */
+.introduction {
+    font-size: 1em;
+}
+
+.article-date {
+    font-weight: bold;
+}
+
+/* These should live elsewhere */
+table.download {
+    font-family: monospace, monospace; /* Hack to fix font-size */
+    font-size: 1.2em;
+}

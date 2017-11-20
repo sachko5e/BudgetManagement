@@ -1,0 +1,54 @@
+.code-string, .code-html-attribute-value {
+    color: green;
+}
+
+.code-html-tag {
+    color: #009;
+}
+
+.code-html-tag-name {
+    color: #00f;
+}
+
+.code-comment {
+    color: #900;
+}
+
+.code-keyword {
+    color: #009;
+    font-weight: bold;
+}
+
+.code-number {
+    color: #099;
+}
+
+.code-regex, .code-html-attribute-name {
+    color: #909;
+}
+
+.code-ellipsis {
+    color: #690;
+}
+
+.code-css-selector {
+    color: #006;
+    font-weight: bold;
+}
+
+.code-css-property {
+    color: #333;
+}
+
+.code-css-value {
+    color: #009;
+}
+
+.code-css-keyword {
+    color: green;
+}
+
+.code-css-modifier {
+    color: #606;
+    font-style: italic;
+}

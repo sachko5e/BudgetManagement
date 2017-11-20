@@ -1,0 +1,153 @@
+/* Decoration:
+ *
+ * background-image
+ * background-position
+ * background-repeat
+ * border-radius
+ * border-style
+ * box-shadow
+ * content
+ * list-style
+ * outline-style
+ * text-decoration
+ * text-shadow
+ */
+
+.inset {
+    border-style: solid;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #111;
+}
+
+h2 {
+    text-shadow: 1px 1px 1px #999;
+}
+
+h2:after {
+    content: "\A0\BB";
+}
+
+h2:before {
+    content: "\AB\A0";
+}
+
+.code, .pre {
+    border-style: double;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+p .code, li .code {
+    border-style: solid;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.demo {
+    border-style: dashed;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+.bullet-list li {
+    background-image: url(../../../lib/silk/bullet_black.png);;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+}
+
+.article-footer-see-also-list li {
+    background-image: url(../../../lib/silk/note_go.png);
+}
+
+li.fail {
+    background-image: url(../../../lib/silk/cross.png);
+}
+
+li.pass {
+    background-image: url(../../../lib/silk/tick.png);;
+}
+
+.article-meta, .article-tag {
+    border-style: solid;
+
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.separator {
+    border-top-style: solid;
+
+    /* Lighter color for FF */
+    -moz-box-shadow: 0 0 1px #BBB;
+    -webkit-box-shadow: 0 0 1px #777;
+    box-shadow: 0 0 1px #777;
+}
+
+.article-footer {
+    border-style: solid;
+}
+
+/* TODO: These should live elsewhere */
+table.download {
+    border-style:  solid;
+
+    -moz-box-shadow: 1px 1px 5px #777;
+    -webkit-box-shadow: 1px 1px 5px #777;
+    box-shadow: 1px 1px 5px #777;
+}
+
+table.download thead {
+    text-shadow: 1px 1px 1px #fff;
+}
+
+/* Not all browsers support borders on thead or col */
+table.download th {
+    border-style: solid;
+}
+
+table.download td {
+    border-style: solid;
+}
+
+table.download .download-icon {
+    background-image: url(/static/lib/silk/package_go.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.license {
+    border-style: solid;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}

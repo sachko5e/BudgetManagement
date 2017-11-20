@@ -1,0 +1,170 @@
+/* Sizes and positions:
+ *
+ * border-width
+ * bottom
+ * clear
+ * display
+ * float
+ * height
+ * left
+ * margin
+ * max-width
+ * min-width
+ * outline-width
+ * overflow
+ * padding
+ * position
+ * right
+ * text-align
+ * top
+ * TODO: white-space???
+ * width
+ */
+
+.inset {
+    border-width: 1px;
+    max-width: 300px; /* width can be overridden by collapse-inset, so apply max-width */
+    overflow-x: hidden;
+    padding: 5px;
+    width: 300px;
+}
+
+.collapsible-inset {
+    width: auto;
+}
+
+.left-inset {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.right-inset {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.inset p {
+    margin: 0 0 10px;
+}
+
+.inset .caption {
+    /* Currently captions are only permitted at the bottom, so... */
+    margin: 10px 0 0;
+}
+
+.inset ul {
+    margin: 0 20px 10px;
+}
+
+/* Not supported on all browsers but things still look ok */
+.inset p:last-child, .inset .caption:last-child, .inset ul:last-child {
+    margin-bottom: 0;
+}
+
+.inset .caption {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    /* TODO: Fix this, should really be 20px */
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+.p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.bullet-list {
+    margin: 20px;
+    text-align: justify;
+}
+
+.bullet-list li {
+    padding-left: 24px;
+}
+
+.code, .pre {
+    border-width: 3px;
+    clear: both;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    white-space: pre;
+}
+
+p .code, li .code {
+    border-width: 1px;
+    clear: none;
+    display: inline;
+    margin: 0 1px;
+    padding: 0 1px;
+}
+
+.demo {
+    border-width: 1px;
+    clear: both;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+}
+
+.article-meta, .article-tag {
+    border-width: 1px;
+    display: inline-block;
+    margin: 5px;
+    padding: 4px 8px;
+    white-space: nowrap;
+}
+
+.separator {
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+    margin: 50px 0 0;
+    overflow: hidden;
+}
+
+.article-footer {
+    border-width: 1px;
+    margin: 20px;
+}
+
+.article-footer p, .article-footer ul, .article-footer .article-footer-heading {
+    margin: 20px;
+}
+
+/* TODO: These should live elsewhere */
+table.download {
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Not all browsers support borders on thead or col */
+table.download th {
+    border-width: 1px;
+}
+
+table.download td {
+    border-width: 0 1px;
+}
+
+table.download td, table.download th {
+    padding: 5px;
+    text-align: center;
+}
+
+.license {
+    border-width: 1px;
+    margin: 20px;
+}
+
+.license p {
+    margin: 10px;
+}

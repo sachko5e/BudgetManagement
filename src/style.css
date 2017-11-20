@@ -23,3 +23,6 @@
   font-weight: 400;
   src: local('Material Icons'), local('MaterialIcons-Regular'), url("../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff") format('woff');
 }
+.nonEditable{
+  white-space: nowrap; 
+}

@@ -1,0 +1,47 @@
+/* Strip CSS default styling */
+
+* {
+    border: 0 #000 none;
+    /* display: block; TODO */
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    text-decoration: none; /* inherit doesn't really make sense and isn't supported by old IE anyway */
+    white-space: inherit;
+}
+
+body {
+    color: #000;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* TODO: Investigate, the following lines cause Opera to go crazy with an IFRAME */
+/**:after, *:before {*/
+    /*content: normal;*/
+/*}*/
+
+*:focus {
+    outline: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}

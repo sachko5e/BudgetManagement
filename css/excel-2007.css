@@ -1,0 +1,202 @@
+html,
+body {
+  width: 100%;
+}
+table {
+  margin: 0 auto;
+}
+div.header {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-family: "Helvetica, sans-serif", Times, serif;
+  font-size: 18px;
+/*  text-shadow: 1px 2px 2px #b0cbef; */
+}
+div.footer {
+  border: 1px;
+  font-size: 2em;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-family: "Helvetica, sans-serif", Times, serif;
+  font-size: 10px;
+  text-align: right;
+}
+.ExcelTable2007 {
+
+  border-width: 1px 0px 0px 1px;
+  font-size: 11pt;
+  font-family: Calibri;
+  font-weight: 100;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.ExcelTable2007 th {
+  /*background-image: url(excel-2007-header-bg.gif); */
+  background-repeat: repeat-x;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #afc0d0;
+  border-width: 1px 1px 1px 0px;
+  height: 17px;
+  padding: 0px 5px;
+  font-family: "Benton Sans Low-DPI",Arial,Helvetica,sans-serif;
+}
+
+.ExcelTable2007 td {
+  border: 0px;
+  background-color: white;
+
+  border: 1px solid #d0d7e5;
+  border-width: 0px 1px 1px 0px;
+  text-align: right;
+}
+.ExcelTable2007 td.totals {
+  border: 0px;
+  background-color: #f8f8ff;
+  padding: 0px 4px 0px 2px;
+  border: 1px solid #d0d7e5;
+  border-width: 0px 1px 1px 0px;
+  text-align: right;
+  background: #c4bebe;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.ExcelTable2007 td.heading {
+  background-color: #eeeeef;
+  text-align: center;
+  border: 1px solid #9eb6ce;
+  border-width: 0px 1px 1px 1px;
+  width: 20px;
+}
+
+.ExcelTable2007 th.heading {
+  /*background-image: url(excel-2007-header-left.gif);*/
+  background-repeat: none;
+  border: 1px solid #afc0d0;
+  border-width: 1px 1px 1px 1px;
+}
+
+.ExcelTable2007 td input {
+  border: 0px;
+  text-align: right;
+  width: 80px;
+  height: 25px;
+  padding: 1px 5px 0px 2px;
+  color: #000000;
+  font-family: "Benton Sans Low-DPI",Arial,Helvetica,sans-serif;
+  font-size: 12px;
+}
+
+.ExcelTable2007 td input:disabled {
+  border: 0px;
+  text-align: right;
+  width: 80px;
+  height: 25px;
+  padding: 0px 5px 0px 2px;
+  color: #6767bd;
+  background: #ffffff;
+  font-family: "Benton Sans Low-DPI",Arial,Helvetica,sans-serif;
+  font-size: 12px;
+}
+
+.ExcelTable2007 td div {
+  border: 0px;
+  text-align: left;
+  width: 100%;
+
+  padding: 1px 5px 0px 2px;
+  background: #ffffff;
+  color: #100101;
+  font-family: "Benton Sans Low-DPI",Arial,Helvetica,sans-serif;
+  font-size: 12px;
+
+}
+.predeterminedAmount {
+  color: #634a4f;
+}
+
+.unallocatedAmount {
+  color: #634a4f;
+}
+.spreadNewAmount{
+  color: #634a4f;
+  background-color: #c4bebe !important;
+  font-weight: bold;
+}
+#buttonFormat {
+  margin: 0 auto;
+  border: 1px 1px 1px 1px  !important;
+  font-size: 2em  !important;
+  padding: 2px  !important;
+}
+#buttonExcel{
+  margin: 0 auto;
+  border: 1px 1px 1px 1px  !important;
+  font-size: 2em  !important;
+  padding: 2px  !important;
+}
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  .print,
+  .print * {
+    display: inherit !important;
+  }
+  body {-webkit-print-color-adjust: exact;
+  printer-colors: exact;
+  color-adjust: exact;}
+}
+
+.nonEditable{
+  border: 0px;
+  background-color: #f8f8ff;
+  padding: 0px 4px 0px 2px;
+  border: 1px solid #d0d7e5;
+  border-width: 0px 1px 1px 0px;
+  text-align: right;
+  background: #c4bebe;
+  font-size: 1em;
+
+}
+
+.selectText {
+  display:  block;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px #b0cbef;
+}
+.selectCenter {
+
+display:  block;
+margin: 0 auto;
+padding: 5px 5px 5px 5px;
+font-weight: bold;
+
+}
+
+a:link {
+  color: #555;
+    text-decoration: none;
+}
+
+a:visited {
+  color: #555;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #555;
+    text-decoration: underline;
+}
+
+a:active {
+  color: #555;
+    text-decoration: none;
+}

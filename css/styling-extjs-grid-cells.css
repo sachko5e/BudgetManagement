@@ -1,0 +1,89 @@
+/* Yellow cells */
+.x-reset .custom-grid .x-grid-cell {
+    background-color: #ffa;
+    border-bottom-color: #ffc;
+    border-top-color: #ff5;
+    color: #009;
+}
+
+.x-reset .custom-grid .x-grid-row-over .x-grid-cell {
+    background-color: #ff6;
+    border-bottom-color: #999;
+    border-bottom-style: dashed;
+    border-top-color: #999;
+    border-top-style: dashed;
+}
+
+.x-reset .custom-grid .x-grid-row-selected .x-grid-cell {
+    background-color: #ff0 !important;
+    border-bottom-color: #999;
+    border-bottom-style: solid;
+    border-top-color: #999;
+    border-top-style: solid;
+}
+
+/* Black and white row striping */
+.x-reset .extra-alt .x-grid-row .x-grid-cell {
+    background-color: #fff;
+    color: #000;
+}
+
+.x-reset .extra-alt .x-grid-row-alt .x-grid-cell {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Red and green rows */
+.x-reset .child-row .x-grid-cell {
+    background-color: #ffe2e2;
+    color: #900;
+}
+
+.x-reset .adult-row .x-grid-cell {
+    background-color: #e2ffe2;
+    color: #090;
+}
+
+/* Lilac column */
+.x-reset .x-grid-row .custom-column {
+    background-color: #ecf;
+    color: #090;
+    font-weight: bold;
+}
+
+/* Icons in the first and last cells of the selected row */
+.x-reset .custom-first-last .x-grid-row-selected .x-grid-cell-first {
+    background-image: url(/static/lib/silk/bullet_go.png);
+    background-repeat: no-repeat;
+    padding-left: 12px;
+}
+
+.x-reset .custom-first-last .x-grid-row-selected .x-grid-cell-last {
+    background-image: url(/static/lib/silk/user_green.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+/* Male/female icons in a column */
+.x-reset .male-cell {
+    background: url(/static/lib/silk/user.png) no-repeat 2px 1px;
+    padding-left: 16px;
+}
+
+.x-reset .female-cell {
+    background: url(/static/lib/silk/user_female.png) no-repeat 2px 1px;
+    padding-left: 16px;
+}
+
+/* Crazy styles on the dirty fields */
+.x-reset .custom-dirty .x-grid-dirty-cell {
+    background-color: #ffa;
+    background-image: url(/static/lib/silk/bullet_red.png);
+    background-position: right center;
+    color: #090;
+}
+
+#dirty-field-demo-left {
+    float: left;
+    margin-right: 10px;
+}

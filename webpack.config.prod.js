@@ -6,8 +6,7 @@ var pkg = require('./package.json');
 
 module.exports = {
   entry: {
-    app: './src/index.js',
-    vendor: Object.keys(pkg.dependencies).concat('./src/vendor')
+    app: './src/containers/app.js'
   },
   output: {
     path: path.join(__dirname, './dist'),
@@ -35,14 +34,8 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'index.html' },
-      { from: 'sw.js' }
+      { from: 'index.html' }
     ]),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      minChunks: Infinity,
-      filename: 'vendor.js'
-    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false

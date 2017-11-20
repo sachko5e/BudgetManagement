@@ -1,0 +1,37 @@
+/* Fonts:
+ *
+ * font-family
+ * font-size
+ * font-weight
+ * letter-spacing
+ * line-height
+ */
+
+html {
+    /* For IE */
+    font-size: 100%;
+}
+
+body {
+    /* TODO: Embedded fonts? */
+    font-family: verdana, helvetica, tahoma, arial, sans-serif;
+
+    /* Scale down from 16px to 10px so that ems are out of 10. Use % here as it improves rescaling in some browsers */
+    font-size: 62.5%;
+}
+
+#top-title {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#top-nav a {
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+#foot-content {
+    font-size: 1.2em;
+}

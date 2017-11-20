@@ -5,10 +5,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var pkg = require('./package.json');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
   entry: {
-    app: './src/index.js',
-    vendor: Object.keys(pkg.dependencies).concat('./src/vendor')
+    app: './src/containers/app.js'
   },
   output: {
     path: path.join(__dirname, 'dist/'),
@@ -18,11 +16,6 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'index.html' }
     ]),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      minChunks: Infinity,
-      filename: 'vendor.js'
-    }),
     new ExtractTextPlugin('style.css')
   ],
   module: {
@@ -34,15 +27,19 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader'
-        })
+        loader: "style-loader!css-loader"
       },
       {
-        test: /\.woff$/,
-        use: 'url-loader'
-      }
+        test: /\.png$/,
+        loader: "url-loader?limit=100000"
+      },
+      {
+        test: /\.jpg$/,
+        loader: "file-loader"
+      },
+     {       test: /\.woff$/,
+           use: 'url-loader'
+     }
     ]
   }
 };

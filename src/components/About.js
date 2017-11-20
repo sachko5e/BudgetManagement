@@ -1,17 +1,31 @@
-import React from 'react';
-import { Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
-import { Link } from 'react-router-dom';
-import { VERSION } from '../constants';
+import React from "react";
+import ReactDOM from "react-dom";
 
-export default () => (
-  <Card shadow={0} style={{ margin: 'auto', textAlign: 'center' }}>
-    <CardTitle style={{ margin: 'auto' }}>Remember</CardTitle>
-    <CardText>
-      Version {VERSION}<br/><br/>
-      <a href="https://github.com/paulhoughton/remember/">Github</a>
-    </CardText>
-    <CardActions border>
-      <Link to="/"><Button colored>OK</Button></Link>
-    </CardActions>
-  </Card>
-);
+class About extends React.Component {
+  constructor(props) {
+    super(props);
+    console.dir(props);
+    this.state = {
+      data: props.value,
+      disabled: props.disabled
+    };
+  }
+
+  render() {
+
+    return (<div className="ExcelTable2007">
+      <ul>
+        <li>
+          Budget Management, Planning and Projection Application
+        </li>
+        <li>
+          MSKCC RTM ISS 2017</li>
+        <li>
+          Application help : Sachko Madjarov madjaros@mskcc.com</li>
+      </ul>
+
+    </div>);
+  }
+}
+
+export default About;

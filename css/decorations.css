@@ -1,0 +1,117 @@
+/* Decoration:
+ *
+ * border-radius
+ * border-style
+ * box-shadow
+ * content
+ * list-style
+ * outline-style
+ * text-decoration
+ * text-shadow
+ */
+
+#main-content {
+    border-style: solid;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+#top-cosmetic {
+    border-style: solid;
+
+    -moz-border-radius: 0 0 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+#top-avatar-flap {
+    border-style: solid;
+
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+#top-avatar {
+    border-style: solid;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+
+    transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+}
+
+#top-avatar:hover {
+    /* TODO: CSS3 animations required for Firefox as 720 is considered a no-op */
+    transform: rotate3d(1, 1, 1, 720deg);
+    -webkit-transform: rotate3d(1, 1, 1, 720deg);
+
+    transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out;
+}
+
+#top-nav {
+    border-style: solid;
+
+    -moz-border-radius: 17px;
+    -webkit-border-radius: 17px;
+    border-radius: 17px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+#top-nav a {
+    text-shadow: 1px 1px 1px #111;
+}
+
+#top-nav a:hover, #top-nav a:focus {
+    text-shadow: 1px 1px 1px #555;
+}
+
+#foot {
+    border-style: solid;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -moz-box-shadow: 0 0 5px #777;
+    -webkit-box-shadow: 0 0 5px #777;
+    box-shadow: 0 0 5px #777;
+}
+
+.main-content a:hover, .main-content a:focus {
+    text-decoration: underline;
+}
+
+/* TODO: focus on other elements */
+a:focus {
+    outline-style: dotted;
+}

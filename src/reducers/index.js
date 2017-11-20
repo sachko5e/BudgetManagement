@@ -1,11 +1,14 @@
-import { combineReducers } from 'redux';
-import main from './main';
-import settings from './settings';
+import { combineReducers } from "redux";
+import center from "./centerReducer";
+import selectRows from "./selectCentersReducer";
+import centerFund from "./centerFundReducer";
+import ajaxCallsInProgress from "./ajaxStatusReducer";
 
 const rootReducer = combineReducers({
-  main,
-  settings
+  center,
+  selectRows,
+  centerFund,
+  ajaxCallsInProgress
 });
 
 export default rootReducer;
-
